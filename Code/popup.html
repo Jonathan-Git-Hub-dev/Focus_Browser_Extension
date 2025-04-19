@@ -1,0 +1,87 @@
+<html lang="en">
+    <head>
+        <title>Focus</title>
+        <link rel="stylesheet" type="text/css" href="popup.css">
+    </head>
+
+    <body id ="body" class="body">
+        <!--Mixture of reference classes and the display of a policy for editing-->
+        <button id = "bOff" hidden class = "dayButton">1</button>
+        <button id = "bOn" hidden class = "dayButtonOn">2</button>
+
+        <div id="pol2" style= "display:none;">
+            <div id="ref_pol" class="pol">
+                <div id = "ref_c1" class="c1">d</div>
+                    <div id = "ref_holdDay" class="holdDay"> 
+                        
+                        <div id = "ref_c2on" hidden class="c2on">M</div>
+                        <div id = "ref_c2off" hidden class="c2off"></div>
+                        <div id = "dd1" class="c2on">M</div>
+                        <div id = "dd2" class="c2off">T</div>
+                        <div id = "dd3" class="c2on">W</div>
+                        <div id = "dd4" class="c2off">T</div>
+                        <div id = "dd5" class="c2off">F</div>
+                        <div id = "dd6" class="c2on">S</div>
+                        <div id = "dd7" class="c2on">S</div>
+                    </div>
+                
+                <div id ="ref_break" class="break"></div>
+
+                <div id = "ref_holdButton" class="holdButton">
+                    <button id = "ref_b1" class="b1">Remove</button>
+                    <button class="b1">Edit</button>
+                </div>
+
+                <div id = "ref_holdTime" class="holdTime">
+                    <div id="ref_c3" hidden class="c3"></div>
+                    <div id = "dt1" class="c3">16:30</div>
+                    <div id = "dt2" class="c3">16:30</div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!--holds inputs for creating and editing a policy-->
+        <div id="hold_create_policies">
+            <div id="create_policies" style="display:none;">
+                    
+                <div class="holdInputs">
+                    <input type="text" id="id_holder" hidden>
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" name="website" class="i1">
+                    <label for="t1">Start:</label>
+                    <input type="time" id="t1" name="t1" class="i2">
+                    <label for="t2">End:</label>
+                    <input type="time" id="t2" name="t2" class="i2">
+                </div>    
+                <br>
+                <div class="holdDayButton">
+                    <button id="d1" class="dayButton">Monday</button>
+                    <button id="d2" class="dayButton">Tuesday</button>
+                    <button id="d3" class="dayButton">Wednesday</button>
+                    <button id="d4" class="dayButton">Tuesday</button>
+                    <button id="d5" class="dayButton">Friday</button>
+                    <button id="d6" class="dayButton">Saturday</button>
+                    <button id="d7" class="dayButton">Sunday</button>
+                </div>
+
+               
+                <p id="errors" class="error"></p><!--output for validation-->
+                
+                <!--options in create box-->
+                <button id="create_create" class="bx">Create</button>
+                <button id="create_hide" class="bx">Hide</button>
+                <button id="edit" class="bx">Confirm-Edit</button>
+                <br>
+            </div>
+        </div>
+        <button id="create" class="bx">Create new policy</button><!--displays create box-->
+        <br>
+        <div>
+            <h3>Active Policies:</h3>
+            <div id="active_policies" class ="hold"><!--polices appear here--></div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

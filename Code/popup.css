@@ -1,0 +1,148 @@
+.hold{/*holds all policies for display*/
+    height: 400px;
+    width: 640px;
+    background-color: silver;
+    overflow-y: scroll;
+    border-style: solid;
+    border-color: rgb(54, 107, 153);
+    scrollbar-color: grey silver;
+}
+.c1{/*displays url of a policy*/
+    height: 20px;
+    width: 320px;
+    text-overflow: ellipsis;
+    background-color: silver;
+    overflow: hidden;
+    float: left;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+    padding-left: 2px;
+}
+.c2on{/*displays a day as on in a completed policy*/
+    height: 20px;
+    width: 20px;
+    background-color: DarkTurquoise;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: Black;
+    color: Black;
+}
+.c2off{/*displays a day as off in a completed policy*/
+    height: 20px;
+    width: 20px;
+    background-color: silver;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.c3{/*displays the time policies start and end*/
+    float: right;
+    height: 15px;
+    width: 50px;
+    text-align: center;
+    background-color: silver;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.pol{/*container for policy elements for display purposes*/
+    height: 50px;
+    width: 600px;
+    background-color: LightBlue;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    padding: 7px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+}
+.holdDay{/*holds and structures all day elements for display in policy container*/
+    float: right;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.holdTime{/*holds and structures the start and end element for display in policy container*/
+    float: right;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.holdButton{/*holds and structures edit and remove button for policies*/
+    float: left;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.holdInputs{/*structures url and time inputs for policy creation*/
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.break{/*div version of a <br>*/
+    min-height: 30px;
+    max-height: 30px;
+}
+.b1{/*edit and remove button style*/
+    float: left;
+    height: 18px;
+    width: 75px;
+    background-color: silver;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.holdDayButton {/*hold days buttons for policy creation and editing*/
+    width: 615px;
+    display: flex;
+    justify-content: space-between;
+}
+.dayButton{/*css of when a day button is non selected in create policy*/
+    text-align: center;
+    height: 20px;
+    width: 80px;
+    background-color: rgb(63, 71, 72);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(63, 71, 72);
+    color: silver; 
+}
+.dayButtonOn{/*when day button is on*/
+    text-align: center;
+    height: 20px;
+    width: 80px;
+    background-color: DarkTurquoise;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: Black;
+}
+.bx{/*admin buttons (hide, create, etc)*/
+    float: left;
+    background-color: LightBlue;
+    width: 130px;
+    margin-left: 5px;
+    text-align: center;
+}
+.error{/*validation output*/
+    color: Gold;
+    font-weight: bold;
+}
+.body{/*full body of the popup*/
+    width: 640px;
+    min-height: 500px;
+    max-height: 500px;
+    background-color:  gray;
+}
+.i1{/*url input formatting*/
+    width: 280px;
+    background-color: silver;
+}
+.i2{/*time input formatting*/
+    background-color: silver;
+}
